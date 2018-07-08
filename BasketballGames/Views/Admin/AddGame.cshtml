@@ -1,0 +1,23 @@
+﻿<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <div class="well">
+            <Form method="post" action="addgame">
+                <div class="form-group">
+                    <label>Date:</label>
+                    <input type="date" class="form-control" name="date" id="date" />
+                </div>
+                <div class="form-group">
+                    <label>Max People</label>
+                    <select name="maxpeople" id="max-people" class="form-control">
+                        <option>---Max People----</option>
+                        @for (int i = 2; i <= 10; i += 2)
+                        {
+                            <option>@i</option>
+                        }
+                    </select>
+                </div>
+                <button type="submit" id="submit-button" class="btn btn-primary">Submit</button>
+            </Form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+﻿@using BasketballGames.Models
+@model IEnumerable<GamesAndPlayers>
+
+<div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        <h2>Choose a game</h2>
+        <Form method="post" action="addplayer">
+
+            @foreach (var game in Model)
+            {
+
+                if (game.MaxPlayers == game.Players.Count())
+                {
+                    <font color="red">warning you will be a backup player</font><br />
+                }
+                <input type="radio" name="gameid" value="@game.Id">
+                @game.MaxPlayers <span>person game on</span> @game.Date.ToLongDateString()
+                
+                foreach (var player in game.Players)
+                {
+                    <li>@player.Name</li>
+                }
+                  
+                <hr />
+                
+            }
+            <div class="well" style="margin-top: 40px;">
+                <h2>Enter your info</h2>
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" class="form-control" name="name" id="name" />
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="text" class="form-control" name="email" id="email" />
+                </div>
+                <button type="submit" id="submit-button" class="btn btn-primary">Submit</button>
+            </div>
+        </Form>
+       
+    </div>
+</div>

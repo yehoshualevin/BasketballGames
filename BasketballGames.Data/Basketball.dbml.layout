@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Basketball">
+  <DataContextMoniker Name="/BasketballDataContext" />
+  <nestedChildShapes>
+    <classShape Id="5de8a62f-a219-40ee-b6d1-ac642d5ac61b" absoluteBounds="2.5, 1, 2, 1.3862939453125">
+      <DataClassMoniker Name="/BasketballDataContext/Game" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4428c183-d93f-45df-82c0-eea8a68f651f" absoluteBounds="2.515, 1.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4a227e0d-3040-451a-ae83-ac69a32c2933" absoluteBounds="5.125, 1, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/BasketballDataContext/Player" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bbb6da34-07ef-46ab-8b26-0ad1b4dd8e62" absoluteBounds="5.1400000000000006, 1.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(4.5 : 1.69314697265625); (5.125 : 1.69314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/BasketballDataContext/Game/Game_Player" />
+      <nodes>
+        <classShapeMoniker Id="5de8a62f-a219-40ee-b6d1-ac642d5ac61b" />
+        <classShapeMoniker Id="4a227e0d-3040-451a-ae83-ac69a32c2933" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="d2c75c17-60e9-47ad-84ff-9c81bb611d89" absoluteBounds="4.75, 4.125, 2, 1.3862939453125">
+      <DataClassMoniker Name="/BasketballDataContext/Member" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8b71ec5f-fecd-480c-8614-adfc0a5d0dfa" absoluteBounds="4.765, 4.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
