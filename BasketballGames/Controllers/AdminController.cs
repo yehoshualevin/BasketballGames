@@ -35,7 +35,7 @@ namespace BasketballGames.Controllers
             var fromAddress = new MailAddress("yehoshualevin22@gmail.com", "Basketball App");
             var toAddress = new MailAddress(m.Email, m.Name);
 
-            string fromPassword = "<divclassrow>";
+            string fromPassword = "None of your business";
             string subject = "New Game Posted!";
             string body = $"Hey {m.Name}, a new game has been posted, sign up now to secure a spot!";
 
