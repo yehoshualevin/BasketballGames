@@ -9,15 +9,19 @@
                 <div class="form-group">
                     <label>Max People</label>
                     <select name="maxpeople" id="max-people" class="form-control">
-                        <option>---Max People----</option>
+                        <option value="">---Max People----</option>
                         @for (int i = 2; i <= 10; i += 2)
                         {
                             <option>@i</option>
                         }
                     </select>
                 </div>
-                <button type="submit" id="submit-button" class="btn btn-primary">Submit</button>
+                <button type="submit" id="submit-button" disabled class="btn btn-primary">Submit</button>
             </Form>
         </div>
     </div>
 </div>
+
+@section scripts{
+    <script src="~/Scripts/site-scripts/add-game.js"></script>
+    }
